@@ -1,5 +1,7 @@
 const express = require('express');
 
+const path = require('path');
+
 const cowsController = require('../controllers/cows');
 const hexController = require('../controllers/hex');
 const bioController = require('../controllers/bio');
@@ -9,6 +11,11 @@ const names = require('../controllers/names');
 
 const router = express.Router();
 
+const apiData = require('../constants/apis.json');
+
+router.get('/', (req, res) => {
+  res.render('index', { endpoints: apiData });
+});
 // GET /feed/posts
 router.get('/cows/', cowsController.getFacts);
 router.get('/cows/all', cowsController.getAll);

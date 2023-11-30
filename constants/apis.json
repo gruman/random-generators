@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Random animal",
+    "endpoints": [
+      {
+        "url": "https://random-generators.vercel.app/animals",
+        "label": "One animal"
+      },
+      {
+        "url": "https://random-generators.vercel.app/animals/all",
+        "label": "All animals"
+      },
+      {
+        "url": "https://random-generators.vercel.app/animals/2",
+        "label": "Number of animals"
+      }
+      
+    ]
+  },{
+    "name": "Bio generator animal",
+    "endpoints": [
+      {
+        "url": "https://random-generators.vercel.app/bio",
+        "label": "One random biopgrahy"
+      }
+      
+    ]
+  }
+  ]

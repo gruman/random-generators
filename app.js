@@ -3,7 +3,10 @@ const app = express()
 var bodyParser = require('body-parser')
 const port = 8080
 
+const path = require('path');
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 

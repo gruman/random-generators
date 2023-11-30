@@ -17,11 +17,39 @@
       
     ]
   },{
-    "name": "Bio generator animal",
+    "name": "Bio generator",
     "endpoints": [
       {
         "url": "https://random-generators.vercel.app/bio",
         "label": "One random biopgrahy"
+      }
+      
+    ]
+  },
+  {
+    "name": "Cow Facts",
+    "endpoints": [
+      {
+        "url": "https://random-generators.vercel.app/cows",
+        "label": "One cow fact"
+      },
+      {
+        "url": "https://random-generators.vercel.app/cows/all",
+        "label": "All cow facts"
+      }
+      
+    ]
+  },
+  {
+    "name": "Random name",
+    "endpoints": [
+      {
+        "url": "https://random-generators.vercel.app/names",
+        "label": "One name"
+      },
+      {
+        "url": "https://random-generators.vercel.app/names/19",
+        "label": "Number of namess"
       }
       
     ]

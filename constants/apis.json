@@ -3,55 +3,84 @@
     "name": "Random animal",
     "endpoints": [
       {
+        "id": 0,
         "url": "https://random-generators.vercel.app/animals",
         "label": "One animal"
       },
       {
+        "id": 1,
         "url": "https://random-generators.vercel.app/animals/all",
         "label": "All animals"
       },
       {
+        "id": 2,
         "url": "https://random-generators.vercel.app/animals/2",
         "label": "Number of animals"
       }
-      
     ]
-  },{
+  },
+  {
     "name": "Bio generator",
     "endpoints": [
       {
+
+        "id": 3,
         "url": "https://random-generators.vercel.app/bio",
         "label": "One random biopgrahy"
       }
-      
     ]
   },
   {
     "name": "Cow Facts",
     "endpoints": [
       {
+
+        "id": 4,
         "url": "https://random-generators.vercel.app/cows",
         "label": "One cow fact"
       },
       {
+
+        "id": 5,
         "url": "https://random-generators.vercel.app/cows/all",
         "label": "All cow facts"
       }
-      
     ]
   },
   {
     "name": "Random name",
     "endpoints": [
       {
+
+        "id": 6,
         "url": "https://random-generators.vercel.app/names",
         "label": "One name"
       },
       {
+        "id": 7,
         "url": "https://random-generators.vercel.app/names/19",
         "label": "Number of namess"
       }
-      
+    ]
+  },
+  {
+    "name": "Random countries",
+    "endpoints": [
+      {
+        "id": 8,
+        "url": "https://random-generators.vercel.app/countries",
+        "label": "One country"
+      },
+      {
+        "id": 9,
+        "url": "https://random-generators.vercel.app/countries/all",
+        "label": "All countries"
+      },
+      {
+        "id": 0,
+        "url": "https://random-generators.vercel.app/countries/2",
+        "label": "Number of countries"
+      }
     ]
   }
-  ]
+]

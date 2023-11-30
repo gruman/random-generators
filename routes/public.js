@@ -8,6 +8,7 @@ const bioController = require('../controllers/bio');
 const smellController = require('../controllers/smell');
 const animalsController = require('../controllers/animals');
 const names = require('../controllers/names');
+const countries = require('../controllers/countries');
 
 const router = express.Router();
 
@@ -32,4 +33,9 @@ router.get('/animals/:num', animalsController.getNum);
 
 router.get('/names/', names.getName);
 router.get('/names/:num', names.getNum);
+
+router.get('/countries', countries.getCountry);
+router.get('/countries/all', countries.getAll);
+router.get('/countries/:num', countries.getNum);
+
 module.exports = router;

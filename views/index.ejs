@@ -65,10 +65,21 @@ li {
       <ul>
         <% endpoint.endpoints.forEach(end => { %>
           <li><label><%= end.label %>:</label>
-          <input type="text" value="<%= end.url %>" /></li>
+          <input type="text" class="select-on-focus" value="<%= end.url %>" id="input<%= end.id %>" /></li>
         <% }); %></ul></li>
     <% }); %>
   </ul>
 </div>
 </body>
+<script>
+  document.querySelectorAll('.select-on-focus').forEach(input => {
+    input.addEventListener('focus', () => {
+      // Use setTimeout to delay deselection until after the default behavior
+      setTimeout(() => {
+        input.select();
+      }, 0);
+    });
+  });
+</script>
+</script>
 </html>

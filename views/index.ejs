@@ -8,6 +8,8 @@
     name="description"
     content="Random Generators: fact, names, countries, etc"
   />
+
+  <link rel="stylesheet" href="/css/styles.css">
   <meta name="keywords" content="random, api, node, express, ejs">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRJ7D0KSPY"></script>
@@ -18,61 +20,12 @@
 
   gtag('config', 'G-MRJ7D0KSPY');
 </script>
- <style>
-
-body * {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #111;
-  font-size: 1.2rem;
-}
-
-h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.container {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  min-height: 100vh;
-  flex-direction: column
-}
-
-input[type=text] {
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-li {
-  list-style-type: none;
-}
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0.25 rem;
-  }
-
-
- </style>
 </head>
 <body>
   <div class="container">
   <h1>Random Generators</h1>
     <p style="margin-bottom: 2rem;">by <a href="https://gruman.co">Matthew Gruman</a></p>
+    <p>A collection of REST APIs to generate random data.</p>
     <p>This site is made with Node, Express, and EJS; and is hosted on <a href="https://vercel.com">Vercel</a>. Code for this website is available on <a href="https://github.com/gruman/random-generators">GitHub</a>.</p>
   <div class="list">
     <% endpoints.forEach(endpoint => { %>

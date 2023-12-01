@@ -48,6 +48,23 @@
     ]
   },
   {
+    "name": "Random words",
+    "endpoints": [
+      {
+
+        "id": 4,
+        "url": "https://random-generators.vercel.app/words",
+        "label": "One word"
+      },
+      {
+
+        "id": 5,
+        "url": "https://random-generators.vercel.app/words/14",
+        "label": "Number of words"
+      }
+    ]
+  },
+  {
     "name": "Random name",
     "endpoints": [
       {
@@ -59,7 +76,7 @@
       {
         "id": 7,
         "url": "https://random-generators.vercel.app/names/19",
-        "label": "Number of namess"
+        "label": "Number of names"
       }
     ]
   },

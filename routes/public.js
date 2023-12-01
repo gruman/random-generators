@@ -9,6 +9,7 @@ const smellController = require('../controllers/smell');
 const animalsController = require('../controllers/animals');
 const names = require('../controllers/names');
 const countries = require('../controllers/countries');
+const words = require('../controllers/words');
 
 const router = express.Router();
 
@@ -37,5 +38,8 @@ router.get('/names/:num', names.getNum);
 router.get('/countries', countries.getCountry);
 router.get('/countries/all', countries.getAll);
 router.get('/countries/:num', countries.getNum);
+
+router.get('/words/', words.getWord);
+router.get('/words/:num', words.getNum);
 
 module.exports = router;

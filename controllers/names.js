@@ -23,6 +23,11 @@ exports.getName = (req, res, next) => {
   res.send(temp[0] + " " + temp[1]);
 }
 
+exports.getNames = (req, res, next) => {
+  
+  res.send(names);
+}
+
 exports.getNum = (req, res, next) => {
   const num = req.params.num;
   let temp = names;

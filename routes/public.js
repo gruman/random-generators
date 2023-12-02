@@ -33,6 +33,7 @@ router.get('/animals/all', animalsController.getAll);
 router.get('/animals/:num', animalsController.getNum);
 
 router.get('/names/', names.getName);
+router.get('/names/all', names.getNames);
 router.get('/names/:num', names.getNum);
 
 router.get('/countries', countries.getCountry);

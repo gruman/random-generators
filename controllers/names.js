@@ -20,7 +20,9 @@ function shuffle(array) {
 exports.getName = (req, res, next) => {
   let temp = names;
   shuffle(temp);
-  res.send(temp[0] + " " + temp[1]);
+  res.send({
+    name: temp[0] + " " + temp[1]
+  });
 }
 
 exports.getNames = (req, res, next) => {
